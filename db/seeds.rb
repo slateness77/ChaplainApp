@@ -33,4 +33,7 @@ AvailableDay.destroy_all
 Station.destroy_all
 
 	Station.create(name: "Lakewood Station", address: "5130 Clark Ave Lakewood, CA (562) 623-3500")
-	
+	Station.create(name: "Carson Station", address: "21356 S. Avalon Blvd. Carson, CA 90745 (310) 830-1123")
+	Station.create(name: "Cerritos Station", address: "18135 Bloomfield Ave. Cerritos, CA 90703 (562) 860-0044")
+	Station.create(name: "Compton Station", address: "301 S. Willowbrook Ave. Compton, CA 90220 (310) 605-6500")
+	Station.create(name: "Norwalk Station", address: "12335 Civic Center Dr. Norwalk, CA 90650 (562) 863-8711")
