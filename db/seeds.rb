@@ -32,6 +32,5 @@ AvailableDay.destroy_all
 
 Station.destroy_all
 
-	Station.create(name: "Lakewood Station", address: "5130 Clark Ave
-Lakewood, CA
-(562) 623-3500")
+	Station.create(name: "Lakewood Station", address: "5130 Clark Ave Lakewood, CA (562) 623-3500")
+	
