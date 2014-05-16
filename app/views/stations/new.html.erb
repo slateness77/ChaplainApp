@@ -1,0 +1,10 @@
+<%= form_for :station, :url => station_path do |f| %>
+
+
+  Email: <%= f.text_field :email %>
+  Password: <%= f.password_field :password %>
+  <%= f.submit "Login" %>
+
+<% end %>
+
+<%= station[:remember_token] %>

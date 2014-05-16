@@ -4,7 +4,9 @@ class User
   field :name, type: String
   field :email, type: String
   field :password_digest, type: String
-  field :phone, type: String
+  field :phone, type: Integer
+  field :station, type: String
+  field :birth_year, type: String
 
   def password
     @password
