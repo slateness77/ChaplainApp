@@ -2,6 +2,8 @@ FloatApp::Application.routes.draw do
   resources :available_days, only: [:index, :new, :create, :destroy]
   resources :employees, only: [:index, :new, :create, :destroy]
   resources :employee_availabilities, only: [:index, :new, :create, :destroy]
+  resource :sessions
+  resources :stations
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

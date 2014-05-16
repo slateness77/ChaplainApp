@@ -6,6 +6,7 @@ gem 'rails', '4.0.4'
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'genghis', '~> 1.4.1'
 gem 'bootstrap-sass', '~>3.1.1'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

@@ -19,9 +19,9 @@ class EmployeesController < ApplicationController
 	    @station = Station.new
 	end
 
-	# def create
-	#     Burrito.create(params.require(:burrito).permit(:name, :ingredient_ids => []))
-	#     redirect_to burritos_path
-	# end
+	def create
+	    Employee.create(params.require(:employee).permit(:name, :phone, :station, :birthyear, :email, :password_digest))
+	    redirect_to employees_path
+	end
 	
 end
