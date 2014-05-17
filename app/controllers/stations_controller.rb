@@ -4,4 +4,8 @@ class StationsController < ApplicationController
 		@station = Station.all
 	end
 
+	def create
+
+	end
+
 end

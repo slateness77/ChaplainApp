@@ -1,14 +1,16 @@
 <h1>What Day Of The Week Is It?</h1>
 
-<%= form_for :available_day, :url => available_day_path do |f| %>
+<%= form_for :available_day, :url => available_days_path do |f| %>
 
 
   
  
-  <%= f.submit "Lakewood Station" %>
-  <%= f.submit "Cerritos Station" %>
-  <%= f.submit "Carson Station" %>
-  <%= f.submit "Norwalk Station" %>
-  <%= f.submit "Compton Station" %>
+  <%= f.submit "Monday" %>
+  <%= f.submit "Tuesday" %>
+  <%= f.submit "Wednesday" %>
+  <%= f.submit "Thursday" %>
+  <%= f.submit "Friday" %>
+  <%= f.submit "Saturday" %>
+  <%= f.submit "Sunday" %>
 
 <% end %>
