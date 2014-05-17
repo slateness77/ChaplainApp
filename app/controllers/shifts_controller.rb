@@ -1,7 +1,7 @@
-class StationsController < ApplicationController
+class ShiftsController < ApplicationController
 
 	def index
-		@station = Station.all
+		@shift = Shift.all
 	end
 
 	def create

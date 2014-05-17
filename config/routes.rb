@@ -5,6 +5,7 @@ FloatApp::Application.routes.draw do
   resource :sessions
   resources :stations
   resources :users, only: [:new, :create]
+  resources :shifts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
