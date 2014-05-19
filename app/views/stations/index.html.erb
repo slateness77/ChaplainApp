@@ -3,13 +3,33 @@
 <%= form_for :station, :url => stations_path do |f| %>
 
 
-  
+  <div class="stations_container">
+	<div class="col-sm-6 col-md-6 col-lg-6" id="stations">
+
  
-  <%= f.submit "Lakewood Station" %>
-  <%= f.submit "Cerritos Station" %>
-  <%= f.submit "Carson Station" %>
-  <%= f.submit "Norwalk Station" %>
-  <%= f.submit "Compton Station" %>
+  <%= f.submit "Lakewood Station", :class => "btn btn-info" %>
+  <br>
+  <br>
+  <br>
+  <%= f.submit "Cerritos Station", :class => "btn btn-info" %>
+  <br>
+  <br>
+  <br>
+  <%= f.submit "Carson Station", :class => "btn btn-info" %>
+  <br>
+  <br>
+  <br>
+  <%= f.submit "Norwalk Station", :class => "btn btn-info" %>
+  <br>
+  <br>
+  <br>
+  <%= f.submit "Compton Station", :class => "btn btn-info" %>
+
+  </div>
+</div>
+
 
 <% end %>
+
+
 

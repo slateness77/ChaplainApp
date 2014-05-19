@@ -1,0 +1,11 @@
+<%= form_for :session, :url => sessions_path + "/deputy" do |f| %>
+
+
+  Code: <%= f.text_field :code %>
+  
+  <%= f.submit "Submit Password" %>
+  
+<% end %>
+
+<%= session[:remember_token] %>
+

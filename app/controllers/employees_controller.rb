@@ -20,7 +20,7 @@ class EmployeesController < ApplicationController
 	end
 
 	def create
-	    Employee.create(params.require(:employee).permit(:name, :phone, :station, :birthyear, :email, :password_digest))
+	    Employee.create(params.require(:employee).permit(:name, :phone, :station, :birthyear, :email, :password_digest, :language, :denomination))
 	    redirect_to employees_path
 	    
 	end

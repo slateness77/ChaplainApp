@@ -6,6 +6,8 @@ FloatApp::Application.routes.draw do
   resources :stations
   resources :users, only: [:new, :create]
   resources :shifts
+  get '/deputylogin' => 'sessions#new_deputy'
+  post 'sessions/deputy' => 'sessions#create_deputy'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

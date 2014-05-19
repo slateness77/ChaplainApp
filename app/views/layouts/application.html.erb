@@ -24,8 +24,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Deputy Login</a></li>
-        <li><a href="#">Chaplain Login</a></li>
+         <li><%= link_to "Deputy Login", deputylogin_path %></li>
+        <li><%= link_to "Chaplain Login", new_sessions_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Station Information<b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -50,8 +50,8 @@
                 <% if session[:remember_token] %>
               <li><%= link_to "Log Out", sessions_path, method: :delete %></li>
           <% else %>
-              <li><%= link_to "Sign Up", new_user_path %></li>
-              <li><%= link_to "Sign In", new_sessions_path %></li>  
+              <li><%= link_to "Chaplain Sign Up", new_user_path %></li>
+              <!-- <li><%= link_to "Sign In", new_sessions_path %></li>   -->
           <% end %>
         </ul>
         <!-- <li class="dropdown">

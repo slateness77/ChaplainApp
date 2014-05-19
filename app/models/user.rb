@@ -7,6 +7,8 @@ class User
   field :phone, type: Integer
   field :station, type: String
   field :birth_year, type: String
+  field :denomination, type: String
+  field :language, type: String
 
   def password
     @password

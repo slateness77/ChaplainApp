@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
   		session[:remember_token] = @user.id
       # puts session[:remember_token] + " ******************************"
   		@current_user = @user
-  		redirect_to stations_path
+  		redirect_to new_employee_path
   	else
   		flash[:error] = "Invalid email/password combination"
       
@@ -23,14 +23,22 @@ class SessionsController < ApplicationController
   	redirect_to stations_path
   end
 
+  def new_deputy
+  end
+
+  def create_deputy
+    if params[:session][:code].downcase == "disneyland"
+      session[:remember_token] = "deputy"
+      redirect_to stations_path
+    else
+      flash[:danger] = "Invalid Password"
+      render :new_deputy
+   end
+  end
+
   protected
 
   def employee_params
     params.require(:employee).permit(:name, :email, :password)
   end
-
-
-
-
-  
 end

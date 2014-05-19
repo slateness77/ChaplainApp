@@ -7,6 +7,8 @@ class Employee
   field :birth_year, type: String
   field :email, type: String
   field :password_digest, type: String
+  field :language, type: String
+  field :denomination, type: String
 
   has_many :employee_availabilities
 
