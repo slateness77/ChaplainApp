@@ -4,13 +4,13 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.where(:email => params[:session][:email]).first
+    @user = Employee.where(:email => params[:session][:email]).first
   	if @user && @user.authenticate(params[:session][:password])
   		flash[:success] = "HELLO " + @user.name + " You have logged in"
   		session[:remember_token] = @user.id
       # puts session[:remember_token] + " ******************************"
   		@current_user = @user
-  		redirect_to new_employee_path
+  		redirect_to edit_employee_path(@user)
   	else
   		flash[:error] = "Invalid email/password combination"
       

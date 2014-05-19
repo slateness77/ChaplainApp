@@ -1,10 +1,9 @@
 FloatApp::Application.routes.draw do
   resources :available_days, only: [:index, :new, :create, :destroy]
-  resources :employees, only: [:index, :new, :create, :destroy]
+  resources :employees, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :employee_availabilities, only: [:index, :new, :create, :destroy]
   resource :sessions
   resources :stations
-  resources :users, only: [:new, :create]
   resources :shifts
   get '/deputylogin' => 'sessions#new_deputy'
   post 'sessions/deputy' => 'sessions#create_deputy'

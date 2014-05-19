@@ -3,14 +3,32 @@
 <%= form_for :available_day, :url => available_days_path do |f| %>
 
 
-  
+  <div id="days">
  
-  <%= f.submit "Monday" %>
-  <%= f.submit "Tuesday" %>
-  <%= f.submit "Wednesday" %>
-  <%= f.submit "Thursday" %>
-  <%= f.submit "Friday" %>
-  <%= f.submit "Saturday" %>
-  <%= f.submit "Sunday" %>
+	  <%= f.submit "Monday", :class => "btn btn-info" %>
+	  
+  	<br>
+  	<br>
+	  <%= f.submit "Tuesday", :class => "btn btn-info" %>
+	  
+  <br>
+  <br>
+	  <%= f.submit "Wednesday", :class => "btn btn-info" %>
+	  
+  <br>
+  <br>
+	  <%= f.submit "Thursday", :class => "btn btn-info" %>
+	  
+  <br>
+  <br>
+	  <%= f.submit "Friday", :class => "btn btn-info" %>
+	  
+  <br>
+  <br>
+	  <%= f.submit "Saturday", :class => "btn btn-info" %>
 
+  <br>
+  <br>
+	  <%= f.submit "Sunday", :class => "btn btn-info" %>
+    </div>
 <% end %>

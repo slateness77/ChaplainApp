@@ -3,11 +3,18 @@
 <%= form_for :shift, :url => shifts_path do |f| %>
 
 
-  
- 
-  <%= f.submit "Day Shift" %>
-  <%= f.submit "Swing Shift" %>
-  <%= f.submit "Graveyard Shift" %>
+  	<div class="shift_container"
+		 <div id="shift">
+			  <%= f.submit "Day Shift", :class => "btn btn-info" %>
+			  <br>
+			  <br>
+			  <%= f.submit "Swing Shift", :class => "btn btn-info" %>
+			  <br>
+			  <br>
+			  <%= f.submit "Graveyard Shift", :class => "btn btn-info" %>
+			</div>
+		</div>
+
  
 
 <% end %>

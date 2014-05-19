@@ -1,2 +1,6 @@
-
-<%= render partial: "form" %>
+<%= form_for @employee do |f| %>
+<%= collection_check_boxes :employee, :available_day_ids, AvailableDay.all, :_id, :to_s %>
+<%= render partial: "form", locals: {:f => f} %>
+<%= f.submit %>
+<%= link_to "Delete", employee_path(@employee), :method => :delete %> 
+<% end %>

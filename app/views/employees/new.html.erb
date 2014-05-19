@@ -1,7 +1,11 @@
 <h1>This is your new form Dude!</h1>
 
+<%= form_for @employee do |f| %>
+
 <div class="row">
 	<div class="col-sm-12 col-md-12 col-lg-12">
-		<%= render partial: "form" %>
+		<%= render partial: "form", locals: {:f => f} %>
 	</div>
 </div>
+
+<% end %>

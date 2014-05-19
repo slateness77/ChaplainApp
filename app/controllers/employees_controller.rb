@@ -20,9 +20,20 @@ class EmployeesController < ApplicationController
 	end
 
 	def create
-	    Employee.create(params.require(:employee).permit(:name, :phone, :station, :birthyear, :email, :password_digest, :language, :denomination))
-	    redirect_to employees_path
+	    e = Employee.create(params.require(:employee).permit(:name, :phone, :station, :birthyear, :email, :password, :language, :denomination))
+	    redirect_to edit_employee_path(e)
 	    
+	end
+
+	def edit
+		@employee = Employee.find(params[:id])
+    	# @available_day = AvailableDay.all
+	end
+
+	def destroy
+		@employee = Employee.find(params[:id])
+		@employee.destroy
+		redirect_to 
 	end
 	
 end

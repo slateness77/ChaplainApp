@@ -50,7 +50,7 @@
                 <% if session[:remember_token] %>
               <li><%= link_to "Log Out", sessions_path, method: :delete %></li>
           <% else %>
-              <li><%= link_to "Chaplain Sign Up", new_user_path %></li>
+              <li><%= link_to "Chaplain Sign Up", new_employee_path %></li>
               <!-- <li><%= link_to "Sign In", new_sessions_path %></li>   -->
           <% end %>
         </ul>
